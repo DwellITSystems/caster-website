@@ -1,0 +1,31 @@
+:root{
+    --primary-color: 90, 195, 203;
+    --primary-foreground: 255, 255, 255;
+    --secondary-color: 241, 245, 249;
+
+    --primary-font-family: "Quicksand", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+     *,
+    body,
+    html {
+        margin: 0;
+        padding: 0;   
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: var(--primary-font-family);
+        background-color: rgba(var(--secondary-color));
+         font-family: var(--primary-font-family);
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
