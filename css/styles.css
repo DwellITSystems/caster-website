@@ -1,8 +1,8 @@
 :root{
-    --primary-color: 90, 195, 203;
+    --primary-color: 236, 114, 22;
     --primary-foreground: 255, 255, 255;
     --secondary-color: 241, 245, 249;
-    --tertiary-color: 29,29,29;
+    --tertiary-color: 51, 63, 92;
 
     --primary-font-family: "Quicksand", sans-serif;
 }
@@ -28,5 +28,20 @@
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+    }
+
+    .arrow-icon {
+        opacity: 0;                                        
+        transform: translateX(-10px);                                        
+        transition: opacity 0.3s ease, transform 0.3s ease;                                        
+    }
+    
+    .hover-link:hover .arrow-icon {
+        opacity: 1;
+        transform: translateX(0);                                        
+    }
+
+    .client-carousel .client-item img{
+        width:auto!important;
     }
 }
