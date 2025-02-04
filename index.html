@@ -2,6 +2,7 @@
 
 <head>
     <title>CASTER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,12 +11,18 @@
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Dosis:wght@200..800&amp;family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Libre+Barcode+39&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Quicksand:wght@300..700&amp;family=Raleway:ital,wght@0,100..900;1,100..900&amp;family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap"
         rel="stylesheet">
     <script type="text/javascript" src="/js/tailwind.3.4.16.js"></script>
-    <script type="text/javascript" src="js/tailwind.config.js"></script>
+    <script type="text/javascript" src="/js/tailwind.config.js"></script>
+    <script type="text/javascript" src="/js/flowbite.min.js.js"></script>
 
 </head>
 
 <body>
     <main class="w-full">
+
+        <div id="loader" class="absolute top-0 left-0 w-full h-full bg-black/60 z-50 flex items-center justify-center">
+            <img src="/images/loader.svg" class="w-16 h-16" />
+        </div>
+
         <div class="w-full relative">
             <div class="w-full flex bg-tertiary-color text-primary-foreground px-12 py-2 mb-auto">
                 <div class="w-full flex items-center gap-2">
@@ -49,24 +56,39 @@
                     <ul class="hidden md:flex text-sm font-semibold">
                         <li
                             class="bg-primary text-primary-foreground flex items-center py-5 px-2 lg:px-6 border-b-2 border-primary hover:bg-primary hover:text-primary-foreground cursor-pointer transition-all duration-300 ease-in-out">
-                            <a href="index.html" class="uppercase leading-6 scroll-link">Home</a>
+                            <a href="#" class="uppercase leading-6 scroll-link">Home</a>
                         </li>
 
                         <li
                             class="flex items-center py-5 px-2 lg:px-6 hover:bg-primary hover:text-primary-foreground cursor-pointer transition-all duration-300 ease-in-out">
-                            <a href="aboutus.html" class="uppercase leading-6 scroll-link">About Us</a>
+                            <a href="#about" class="uppercase leading-6 scroll-link">About Us</a>
                         </li>
 
                         <li
                             class="flex items-center py-5 px-2 lg:px-6 hover:bg-primary hover:text-primary-foreground cursor-pointer transition-all duration-300 ease-in-out">
-                            <a href="#" class="uppercase leading-6 scroll-link">Services</a>
+                            <a href="#services" class="uppercase leading-6 scroll-link">Services</a>
+                        </li>
+
+                        <li
+                            class="flex items-center py-5 px-2 lg:px-6 hover:bg-primary hover:text-primary-foreground cursor-pointer transition-all duration-300 ease-in-out">
+                            <a href="#fleet" class="uppercase leading-6 scroll-link">Fleet</a>
+                        </li>
+
+                        <li
+                            class="flex items-center py-5 px-2 lg:px-6 hover:bg-primary hover:text-primary-foreground cursor-pointer transition-all duration-300 ease-in-out">
+                            <a href="#" class="uppercase leading-6 scroll-link">Careers</a>
+                        </li>
+
+                        <li
+                            class="flex items-center py-5 px-2 lg:px-6 hover:bg-primary hover:text-primary-foreground cursor-pointer transition-all duration-300 ease-in-out">
+                            <a href="#contact" class="uppercase leading-6 scroll-link">Contact Us</a>
                         </li>
 
                         <li class="py-1 cursor-pointer transition-all duration-300 ease-in-out flex items-center">
                             <a href="#" class="uppercase leading-6 scroll-link">
                                 <button type="button"
                                     class="bg-primary font-semibold rounded px-4 py-2 text-sm flex items-center gap-2 text-primary-foreground">
-                                    Contact US
+                                    Employee Login
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         strokeWidth="1.5" stroke="currentColor" class="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -136,7 +158,7 @@
             </div>
         </div>
 
-        <section class="w-full px-12 py-12 bg-gray-900 leading-relaxed flex gap-8 relative" id="about">
+        <section id="about" class="w-full px-12 py-16 bg-gray-900 leading-relaxed flex gap-8 relative" id="about">
             <div class="w-1/5 flex items-center">
                 <h2 class="text-4xl font-semibold text-primary-foreground">
                     About <span class="text-primary">Caster</span>
@@ -164,21 +186,6 @@
                     corporis consequuntur explicabo vero at dignissimos repellat, quod officiis officia quaerat
                     culpa
                     voluptate ab, quidem fugit!
-
-                </p>
-
-                <p class="font-medium text-primary-foreground flex items-center gap-2 mt-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                        class="size-5 text-primary">
-                        <path fillRule="evenodd"
-                            d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                            clipRule="evenodd" />
-                        <path fillRule="evenodd"
-                            d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                            clipRule="evenodd" />
-                    </svg>
-
-                    Intermodal Shipping
                 </p>
 
                 <p class="font-medium text-primary-foreground flex items-center gap-2 mt-3">
@@ -209,14 +216,38 @@
                     Hot Shot Trucking
                 </p>
 
-                <div class="w-96 h-72 absolute end-0 -bottom-20">
-                    <img src="/images/items/img-2.png" class="max-w-full max-h-full" />
-                </div>
+                <h2 class="mt-8 text-primary-foreground text-3xl font-semibold">
+                    Our <span class="text-primary">Growth</span>
+                </h2>
+
+                <p class="font-medium text-primary-foreground mt-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Esse autem suscipit ex
+                    voluptate? Velit,
+                    corporis consequuntur explicabo vero at dignissimos repellat, quod officiis officia quaerat
+                    culpa
+                    voluptate ab, quidem fugit!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Esse autem suscipit ex
+                    voluptate? Velit,
+                    corporis consequuntur explicabo vero at dignissimos repellat, quod officiis officia quaerat
+                    culpa
+                    voluptate ab, quidem fugit!
+                </p>
             </div>
         </section>
 
-        <section class="w-full px-12 py-8 bg-primary-foreground border-b">
+        <section class="w-full px-12 py-16 bg-primary-foreground border-b">
             <div class="w-full">
+                <h2 class="text-4xl font-semibold text-gray-900 text-center">
+                    Our <span class="text-primary">Clients</span>
+                </h2>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+            <div class="w-full py-12 mt-10">
                 <div class="client-carousel owl-carousel flex items-center" id="client-carousel">
                     <div class="client-item flex justify-center">
                         <img src="/images/clients/brand-1.png" alt="Client 1" class="w-auto max-h-auto max-w-auto">
@@ -305,10 +336,10 @@
             </div>
         </section>
 
-        <section class="w-full px-12 py-16 bg-primary-foreground border-b border-t">
+        <section id="fleet" class="w-full px-12 py-16 bg-primary-foreground border-b border-t">
             <div class="w-full">
                 <h2 class="text-4xl font-semibold text-gray-900 text-center">
-                    Let’s View Our <span class="text-primary">Latest Projects</span>
+                    Our <span class="text-primary">Fleet</span>
                 </h2>
                 <p class="text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -342,7 +373,7 @@
                             <img src="/images/items/img-1.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110">
                             <div
-                                class="flex items-center justify-center bg-black/50 text-primary-foreground w-full h-[84.5%] absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                                class="flex items-center justify-center bg-black/50 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
                                 <span class="border rounded-full p-2 transition-all duration-300 ease-in-out">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         strokeWidth="1.5" stroke="currentColor"
@@ -362,7 +393,7 @@
                             <img src="/images/items/img-2.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110">
                             <div
-                                class="flex items-center justify-center bg-black/50 text-primary-foreground w-full h-[84.5%] absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                                class="flex items-center justify-center bg-black/50 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
                                 <span class="border rounded-full p-2 transition-all duration-300 ease-in-out">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         strokeWidth="1.5" stroke="currentColor"
@@ -382,7 +413,7 @@
                             <img src="/images/items/img-3.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110">
                             <div
-                                class="flex items-center justify-center bg-black/50 text-primary-foreground w-full h-[84.5%] absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                                class="flex items-center justify-center bg-black/50 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
                                 <span class="border rounded-full p-2 transition-all duration-300 ease-in-out">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         strokeWidth="1.5" stroke="currentColor"
@@ -402,7 +433,7 @@
                             <img src="/images/items/img-4.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110">
                             <div
-                                class="flex items-center justify-center bg-black/50 text-primary-foreground w-full h-[84.5%] absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                                class="flex items-center justify-center bg-black/50 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
                                 <span class="border rounded-full p-2 transition-all duration-300 ease-in-out">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                         strokeWidth="1.5" stroke="currentColor"
@@ -476,15 +507,15 @@
                 </div>
             </div>
 
-            <div class="h-44 absolute start-0 -bottom-3">
+            <!-- <div class="h-44 absolute start-0 -bottom-3">
                 <img src="/images/items/s-1.png" class="max-w-full max-h-full" />
-            </div>
+            </div> -->
         </section>
 
-        <section class="w-full px-12 py-16 bg-primary-foreground">
+        <section id="services" class="w-full px-12 py-16 bg-primary-foreground border-b">
             <div class="w-full">
                 <h2 class="text-4xl font-semibold text-gray-900 text-center">
-                    Our <span class="text-primary">Gallery</span>
+                    Our <span class="text-primary">Services</span>
                 </h2>
                 <p class="text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -493,85 +524,166 @@
 
             <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8 mt-16">
                 <div
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                    <img src="/images//gallery/img-1.jpg" loading="lazy" alt="Photo by Minh Pham"
+                    class="service-view cursor-pointer group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="/images/gallery/img-1.jpg" loading="lazy" alt=""
                         class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                     <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                    </div>
+                        class="flex px-4 flex-col items-center justify-center bg-black/80 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                        <h2 class="mt-3 font-semibold text-primary text-2xl">Truck 1</h2>
+                        <p class="text-center relative inline-block text-md text-primary-foreground font-semibold mt-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem, quisquam nihil
+                            provident quae itaque consectetur dolorum.
+                        </p>
 
-                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Truck 1</span>
+                        <span class="border rounded-full mt-5 p-2 transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                stroke="currentColor"
+                                class="size-6 transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:stroke-primary-foreground">
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                            </svg>
+                        </span>
+                    </div>
                 </div>
 
                 <div
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                    <img src="/images/gallery/img-2.jpg" loading="lazy" alt="Photo by Magicle"
+                    class="service-view cursor-pointer group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="/images/gallery/img-2.jpg" loading="lazy" alt=""
                         class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
                     <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        class="flex px-4 flex-col items-center justify-center bg-black/80 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                        <h2 class="mt-3 font-semibold text-primary text-2xl">Truck 2</h2>
+                        <p class="text-center relative inline-block text-md text-primary-foreground font-semibold mt-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem, quisquam nihil
+                            provident quae itaque consectetur dolorum.
+                        </p>
+
+                        <span class="border rounded-full mt-5 p-2 transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                stroke="currentColor"
+                                class="size-6 transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:stroke-primary-foreground">
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                            </svg>
+                        </span>
                     </div>
-                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Truck 2</span>
                 </div>
 
                 <div
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                    <img src="/images/gallery/img-3.jpg" loading="lazy" alt="Photo by Martin Sanchez"
+                    class="service-view cursor-pointer group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="/images/gallery/img-3.jpg" loading="lazy" alt=""
                         class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
 
                     <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        class="flex px-4 flex-col items-center justify-center bg-black/80 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                        <h2 class="mt-3 font-semibold text-primary text-2xl">Truck 3</h2>
+                        <p class="text-center relative inline-block text-md text-primary-foreground font-semibold mt-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem, quisquam nihil
+                            provident quae itaque consectetur dolorum.
+                        </p>
+
+                        <span class="border rounded-full mt-5 p-2 transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                stroke="currentColor"
+                                class="size-6 transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:stroke-primary-foreground">
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                            </svg>
+                        </span>
                     </div>
-                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Truck 3</span>
                 </div>
 
                 <div
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                    <img src="/images/gallery/img-4.jpg" loading="lazy" alt="Photo by Lorenzo Herrera"
+                    class="service-view cursor-pointer group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="/images/gallery/img-4.jpg" loading="lazy" alt=""
                         class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
                     <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        class="flex px-4 flex-col items-center justify-center bg-black/80 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                        <h2 class="mt-3 font-semibold text-primary text-2xl">Truck 4</h2>
+                        <p class="text-center relative inline-block text-md text-primary-foreground font-semibold mt-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem, quisquam nihil
+                            provident quae itaque consectetur dolorum.
+                        </p>
+
+                        <span class="border rounded-full mt-5 p-2 transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                stroke="currentColor"
+                                class="size-6 transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:stroke-primary-foreground">
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                            </svg>
+                        </span>
                     </div>
-                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Truck 4</span>
                 </div>
 
                 <div
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                    <img src="/images/gallery/img-5.jpg" loading="lazy" alt="Photo by Lorenzo Herrera"
+                    class="service-view cursor-pointer group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="/images/gallery/img-5.jpg" loading="lazy" alt=""
                         class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
                     <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        class="flex px-4 flex-col items-center justify-center bg-black/80 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                        <h2 class="mt-3 font-semibold text-primary text-2xl">Truck 5</h2>
+                        <p class="text-center relative inline-block text-md text-primary-foreground font-semibold mt-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem, quisquam nihil
+                            provident quae itaque consectetur dolorum.
+                        </p>
+
+                        <span class="border rounded-full mt-5 p-2 transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                stroke="currentColor"
+                                class="size-6 transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:stroke-primary-foreground">
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                            </svg>
+                        </span>
                     </div>
-                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Truck 5</span>
                 </div>
 
                 <div
-                    class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                    <img src="/images/gallery/img-6.jpg" loading="lazy" alt="Photo by Lorenzo Herrera"
+                    class="service-view cursor-pointer group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                    <img src="/images/gallery/img-6.jpg" loading="lazy" alt=""
                         class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
                     <div
-                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        class="flex px-4 flex-col items-center justify-center bg-black/80 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                        <h2 class="mt-3 font-semibold text-primary text-2xl">Truck 6</h2>
+                        <p class="text-center relative inline-block text-md text-primary-foreground font-semibold mt-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt autem, quisquam nihil
+                            provident quae itaque consectetur dolorum.
+                        </p>
+
+                        <span class="border rounded-full mt-5 p-2 transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                stroke="currentColor"
+                                class="size-6 transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:stroke-primary-foreground">
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                            </svg>
+                        </span>
                     </div>
-                    <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Truck 6</span>
                 </div>
             </div>
         </section>
 
-        <section class="w-full bg-banner-4 bg-[0_-150px] bg-cover">
-            <div class="w-full bg-black/70 px-12 py-16">
-                <div class="w-full">
-                    <h2 class="text-4xl font-semibold text-primary-foreground text-center">
-                        Get in <span class="text-primary">Touch</span>
-                    </h2>
-                    <p class="text-center text-primary-foreground">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
+        <section id="contact" class="w-full">
+            <div class="w-full flex gap-12">
+                <div class="w-full mt-16 pl-12">
+                    <div class="w-full">
+                        <h2 class="text-4xl font-semibold text-center">
+                            Get in <span class="text-primary">Touch</span>
+                        </h2>
+                        <p class="text-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
 
-                <div class="w-full mt-16">
                     <form>
-                        <div class="w-full grid lg:grid-cols-3 gap-6">
-                            <div class="w-full">
+                        <div class="w-full grid grid-cols-2 gap-6 mt-16">
+                            <div class="w-full col-span-2">
                                 <input type="text"
                                     class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
                                     placeholder="Your Name">
@@ -589,7 +701,7 @@
                                     placeholder="Mobile No">
                             </div>
 
-                            <div class="w-full lg:col-span-3">
+                            <div class="w-full lg:col-span-2">
                                 <textarea
                                     class="h-24 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
                                     placeholder="Message"></textarea>
@@ -609,10 +721,19 @@
                         </div>
                     </form>
                 </div>
+
+                <div class="w-full">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Kochi&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                href="https://sprunkin.com/">Sprunki</a></div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer class="w-full bg-gray-900 px-12 py-12 mt-16 text-primary-foreground">
+        <footer class="w-full bg-gray-900 px-12 py-12 mt-0 text-primary-foreground">
             <div class="max-w-screen-xl px-4 py-0 mx-auto space-y-5 overflow-hidden sm:px-6 lg:px-8">
                 <div class="flex justify-center text-primary-foreground">
                     <div class="text-4xl font-bold">
@@ -680,12 +801,97 @@
                 </div>
             </div>
         </footer>
+
         <div class="w-full bg-gray-800 py-2">
             <p class="text-sm leading-6 text-center text-primary-foreground font-semibold">
                 © 2025 Caster, Inc. All rights reserved.
             </p>
         </div>
     </main>
+
+    <button class="hidden" data-modal-target="default-modal" id="modal-open" data-modal-toggle="default-modal"
+        type="button"></button>
+
+    <div id="default-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-5xl max-h-full">
+            <div class="relative bg-white rounded-lg shadow">
+                <div class="flex items-center justify-between p-2 md:p-3 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-gray-900">Our Services</h3>
+                    <button type="button"
+                        class="modal-cancel-btn text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="default-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+
+                <div class="bg-secondary overflow-x-auto max-h-[80vh]">
+                    <div class="w-full flex">
+                        <div class="w-full">
+                            <div class="w-full h-62">
+                                <img id="service-modal-img" loading="lazy" alt=""
+                                    class="inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                            </div>
+                        </div>
+
+                        <div class="w-full px-12 pt-6 pb-12">
+                            <h2 class="text-primary text-2xl font-semibold" id="service-modal-text">Truck 1</h2>
+                            <p class="font-medium mt-3">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Esse autem suscipit ex
+                                voluptate? Velit,
+                                corporis consequuntur explicabo vero at dignissimos repellat, quod officiis officia
+                                quaerat
+                                culpa
+
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Esse autem suscipit ex
+                                voluptate? Velit,
+                                corporis consequuntur explicabo vero at dignissimos repellat, quod officiis officia
+                                quaerat
+                                culpa
+                                voluptate ab, quidem fugit!
+                            </p>
+
+                            <p class="font-medium flex items-center gap-2 mt-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-5 text-primary">
+                                    <path fillRule="evenodd"
+                                        d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                        clipRule="evenodd" />
+                                    <path fillRule="evenodd"
+                                        d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                        clipRule="evenodd" />
+                                </svg>
+
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+
+                            <p class="font-medium flex items-center gap-2 mt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="size-5 text-primary">
+                                    <path fillRule="evenodd"
+                                        d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                        clipRule="evenodd" />
+                                    <path fillRule="evenodd"
+                                        d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                                        clipRule="evenodd" />
+                                </svg>
+
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
@@ -703,6 +909,16 @@
                 $header.removeClass('bg-primary-foreground/70 animate-fadeInDown top-0')
                     .addClass('bg-primary-foreground/80 top-9 md:top-9 animate-fadeInUp');
             }
+        });
+
+        $(document).ready(function () {
+            $(".service-view").click(function () {
+                var imgSrc = $(this).find('img').attr('src');
+                var header = $(this).find('h2').text();
+                $("#service-modal-img").attr('src', imgSrc);
+                $("#service-modal-text").text(header);
+                $("#modal-open").trigger('click');
+            });
         });
     </script>
 </body>

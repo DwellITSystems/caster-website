@@ -73,14 +73,14 @@ $(document).ready(function () {
     });
 
     $("#testimonial-carousel").owlCarousel({
-        items: 1,
+        items: 2,
         loop: true,
         margin: 10,
         autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: false,
-        dots: false,
+        dots: true,
         navText: ['<', '>'],
     });
 
@@ -103,4 +103,8 @@ $(document).ready(function () {
             }
         }
     });
+
+    setTimeout(() => {
+        $("#loader").hide();
+    }, 3000);
 });
