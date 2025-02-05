@@ -18,8 +18,8 @@
         margin: 0;
         padding: 0;   
         box-sizing: border-box;        
-        scroll-snap-align: center;        
-    }
+        scroll-snap-align: center;           
+    }    
 
     body {
         font-family: var(--primary-font-family);
@@ -28,7 +28,7 @@
         font-synthesis: none;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;        
+        -moz-osx-font-smoothing: grayscale;                
     }
 
     .arrow-icon {

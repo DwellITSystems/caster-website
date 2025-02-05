@@ -43,11 +43,10 @@ $(document).ready(function () {
     });
 
 
-    $('#product-carousel').owlCarousel({
+    $('#product-carousel, #gallery-carousel').owlCarousel({
         loop: true,
         margin: 10,
-        nav: true,
-        navText: ["<", ">"],
+        nav: false,
         dots: false,
         autoplay: true,
         autoplayTimeout: 3000,
@@ -64,12 +63,12 @@ $(document).ready(function () {
         }
     });
 
-    $('#product-carousel-prev').click(function () {
-        $('#product-carousel').trigger('prev.owl.carousel');
+    $('#product-carousel-prev, #gallery-carousel-prev').click(function () {
+        $('#product-carousel, #gallery-carousel').trigger('prev.owl.carousel');
     });
 
-    $('#product-carousel-next').click(function () {
-        $('#product-carousel').trigger('next.owl.carousel');
+    $('#product-carousel-next, #gallery-carousel-next').click(function () {
+        $('#product-carousel, #gallery-carousel').trigger('next.owl.carousel');
     });
 
     $("#testimonial-carousel").owlCarousel({
@@ -80,8 +79,7 @@ $(document).ready(function () {
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         nav: false,
-        dots: true,
-        navText: ['<', '>'],
+        dots: false
     });
 
     $("#client-carousel").owlCarousel({
@@ -89,7 +87,7 @@ $(document).ready(function () {
         loop: true,
         margin: 30,
         autoplay: true,
-        autoplayTimeout: 3000,
+        autoplayTimeout: 1000,
         autoplayHoverPause: true,
         responsive: {
             0: {
@@ -106,5 +104,5 @@ $(document).ready(function () {
 
     setTimeout(() => {
         $("#loader").hide();
-    }, 3000);
+    }, 2000);
 });
