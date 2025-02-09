@@ -5,7 +5,8 @@ tailwind.config = {
                 "banner-1": "url('/images/banner/banner-1.jpg')",
                 "banner-2": "url('/images/banner/banner-2.jpg')",
                 "banner-3": "url('/images/banner/banner-3.jpg')",
-                "banner-4": "url('/images/banner/banner-4.jpg')"
+                "banner-4": "url('/images/banner/banner-4.jpg')",
+                "banner-5": "url('/images/banner/demo.jpg')"
             },
             colors: {
                 "primary": "rgba(var(--primary-color),1)",
