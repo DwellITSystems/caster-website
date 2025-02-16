@@ -1,0 +1,212 @@
+{
+    "banner": {},
+    "about": [
+        {
+            "id": 1,
+            "title": "<span class='text-primary'>Who</span> We Are",
+            "content": "Caster Logistics is a trusted name in Kerala’s logistics industry, recognized for its unwavering commitment to excellence, innovation, and customer satisfaction. What started as a small venture with a single vehicle and a bold vision has evolved into a thriving enterprise with a fleet of 12 trucks and an extensive logistics network spanning multiple states. Our dedication to efficiency, reliability, and service quality has positioned us as a preferred partner for businesses seeking seamless transportation solutions.",
+            "subItems": []
+        },
+        {
+            "id": 2,
+            "title": "<span class='text-primary'>Growth</span> Story",
+            "content": "Our journey began in 2016 with nothing but a mini truck, a strong work ethic, and an ambition to make a mark in the logistics industry. Determined to build trust in a competitive market, our founder personally handled deliveries, ensuring reliability and customer satisfaction from day one. Those early years were shaped by long hours, relentless perseverance, and an unshakable belief in the power of dedication. <br/> <br/> From providing dependable transport services to local businesses, we steadily expanded, embracing innovation and customer-centric strategies that set us apart. Through years of hard work, adaptability, and a deep understanding of the logistics landscape, we have grown into a well-established brand offering seamless supply chain solutions across the country. <br/> <br/> Today, our success is built on the trust of our clients, the expertise of our team, and our continuous pursuit of excellence. As we move forward, we remain committed to enhancing our services, leveraging technology, and strengthening our network to keep businesses moving efficiently.",
+            "subItems": []
+        },
+        {
+            "id": 3,
+            "title": "<span class='text-primary'>Our</span> Vision",
+            "content": "Be a leading force in the logistics industry, delivering seamless, efficient, and technology-driven transportation solutions that empower businesses of all sizes, while driving economic growth across India.",
+            "subItems": []
+        },
+        {
+            "id": 4,
+            "title": "<span class='text-primary'>Mission</span> Statement",
+            "content": "Our mission is to deliver reliable, cost-effective logistics solutions for businesses of all sizes by leveraging technology and expertise, ensuring timely and secure transportation, and building lasting partnerships based on trust and excellence.",
+            "subItems": []
+        },
+        {
+            "id": 5,
+            "title": "<span class='text-primary'>Our</span> Core Values",
+            "content": "",
+            "subItems": [
+                {
+                    "title": "Reliability",
+                    "content": "Providing timely, secure, and efficient logistics solutions for businesses of all sizes, whether in rural, urban, or metro areas."
+                },
+                {
+                    "title": "Integrity",
+                    "content": "Building trust through transparency, professionalism, and ethical business practices."
+                },
+                {
+                    "title": "Innovation",
+                    "content": "Continuously improving logistics operations with technology and smarter strategies to enhance service quality."
+                }
+            ]
+        }
+    ],
+    "service": [
+        {
+            "id": 1,
+            "title": "<span class='text-primary'>Our</span> Services",
+            "content": "At Caster Logistics, we take pride in delivering seamless, efficient, and technology-driven logistics solutions to businesses of all sizes—whether you operate in a rural town, a growing urban centre, or a major metro city. We are committed to providing transparent, cost-effective, and reliable transportation services that empower businesses, optimize supply chains, and ensure smooth, uninterrupted operations. With years of industry experience and a deep understanding of logistics challenges, we offer customized solutions designed to fit the needs of small, medium, and large businesses alike. Our comprehensive services cover everything from full truckload shipping to third-party logistics and warehousing, ensuring that your goods reach their destination safely, efficiently, and on time.",
+            "items": [
+                {
+                    "id": 1,
+                    "title": "Full Truckload (FTL) Services – Fast & Secure Bulk Transport",
+                    "content": "For businesses that require exclusive truck space for their shipments, our Full Truckload (FTL) services offer a direct and efficient transportation solution. With FTL, your goods are shipped in a dedicated truck, ensuring faster delivery, maximum security, and cost savings for bulk shipments.",
+                    "image": "/images/services/img-1.jpg",
+                    "subItems": [
+                        {
+                            "tilte": "Why Choose Our FTL Services?",
+                            "items": [
+                                {
+                                    "content": "Faster Transit Times – No stops, direct deliveries without delays."
+                                },
+                                {
+                                    "content": "Enhanced Security – Your shipment remains in the same truck, reducing handling risks."
+                                },
+                                {
+                                    "content": "Cost Efficiency for Bulk Shipments – Ideal for manufacturers, wholesalers, and large-scale distributors."
+                                },
+                                {
+                                    "content": "Nationwide Coverage – Seamless connectivity across multiple states. Our FTL services are best suited for businesses that require dedicated, large-volume transportation to move goods safely and efficiently."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Partial Truckload (PTL) Services – Flexible & Affordable Freight Solutions",
+                    "content": "For businesses that do not require an entire truck for their shipments, our Partial Truckload (PTL) services offer a cost-effective alternative, allowing multiple shipments to share space while ensuring secure and timely delivery.",
+                    "image": "/images/services/img-2.jpg",
+                    "subItems": [
+                        {
+                            "tilte": "Key Benefits of Our PTL Services:",
+                            "items": [
+                                {
+                                    "content": "Lower Shipping Costs – Pay only for the space you use."
+                                },
+                                {
+                                    "content": "Optimized Routing – Efficiently planned transport to reduce transit time."
+                                },
+                                {
+                                    "content": "Secure Handling – Ensuring minimal handling to prevent damages."
+                                },
+                                {
+                                    "content": "Perfect for Mid-Sized Shipments – Suitable for businesses needing flexible transport options. Our PTL solutions help businesses reduce logistics costs while maintaining high delivery standards."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "B2B Logistics Services – Seamless Business Supply Chain Solutions",
+                    "content": "We specialize in Business-to-Business (B2B) logistics, catering to manufacturers, wholesalers, retailers, and distributors who require reliable, large-scale transportation solutions.",
+                    "image": "/images/services/img-3.jpg",
+                    "subItems": [
+                        {
+                            "tilte": "What Makes Our B2B Logistics Stand Out?",
+                            "items": [
+                                {
+                                    "content": "Custom Transportation Plans – Tailored to each business’s operational needs."
+                                },
+                                {
+                                    "content": "Scalable & Flexible Services – Whether you need daily, weekly, or seasonal logistics."
+                                },
+                                {
+                                    "content": "Secure Handling of Bulk & Fragile Goods – Ensuring product safety throughout transit."
+                                },
+                                {
+                                    "content": "Nationwide Coverage – Serving businesses across rural, urban, and metro regions. Our B2B logistics solutions are designed to optimize efficiency, reduce transit times, and ensure supply chain reliability."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "B2B Parcel Services – Fast & Secure Parcel Delivery for Businesses",
+                    "content": "For businesses requiring frequent parcel shipments, our B2B Parcel Services provide cost-effective, fast, and secure delivery options. We specialize in handling bulk orders, fragile items, and high-value shipments with precision and care.",
+                    "image": "/images/services/img-4.jpg",
+                    "subItems": [
+                        {
+                            "tilte": "Why Choose Our B2B Parcel Services?",
+                            "items": [
+                                {
+                                    "content": "Express & Standard Delivery – Choose from multiple shipping options based on urgency."
+                                },
+                                {
+                                    "content": "Door-to-Door Pickup & Delivery – Hassle-free logistics solutions for businesses."
+                                },
+                                {
+                                    "content": "Secure Packaging & Handling – Ensuring products reach their destination safely."
+                                },
+                                {
+                                    "content": "Transparent Pricing & Real-Time Tracking – No hidden fees, complete visibility. Our B2B parcel services support e-commerce businesses, wholesalers, and distributors needing regular and reliable parcel logistics."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Carrying & Forwarding (C&F) Services – Efficient Warehousing & Distribution",
+                    "content": "With our Carrying & Forwarding (C&F) services, we act as a trusted supply chain partner, ensuring seamless coordination between manufacturers, distributors, and retailers.",
+                    "image": "/images/services/img-5.jpg",
+                    "subItems": [
+                        {
+                            "tilte": "Our C&F Services Include",
+                            "items": [
+                                {
+                                    "content": "Safe & Secure Warehousing – Strategically located storage facilities for inventory management."
+                                },
+                                {
+                                    "content": "Order Processing & Dispatch Management – Handling large volumes with accuracy."
+                                },
+                                {
+                                    "content": "Distribution & Transportation – Ensuring timely deliveries across all regions."
+                                },
+                                {
+                                    "content": "Customized Solutions – Tailored logistics support for different industries. With Caster Logistics C&F services, businesses can enhance their supply chain efficiency and streamline their distribution network."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "clients": [
+        {
+            "id": 1,
+            "title": "<span class='text-primary'>Our</span> Clients",
+            "content": "Our clients are the cornerstone of our success. We proudly partner with a diverse range of businesses—from small enterprises to large corporations—across rural, urban, and metro regions. Our commitment to trust, technology, and excellence ensures that every client receives tailored, efficient logistics solutions that drive their success.",
+            "items": [
+                {
+                    "image": "/images/clients/brand-1.png"
+                },
+                {
+                    "image": "/images/clients/brand-2.png"
+                },
+                {
+                    "image": "/images/clients/brand-3.png"
+                },
+                {
+                    "image": "/images/clients/brand-4.png"
+                },
+                {
+                    "image": "/images/clients/brand-5.png"
+                },
+                {
+                    "image": "/images/clients/brand-6.png"
+                }
+            ]
+        }
+    ],
+    "testimonial": {},
+    "fleet": {},
+    "gallery": {}
+}
