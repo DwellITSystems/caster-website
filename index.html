@@ -20,8 +20,10 @@
 <body>
     <main class="w-full">
         <div id="loader"
-            class="absolute top-0 left-0 w-full h-full bg-primary-foreground z-50 flex items-center justify-center">
-            <img src="/images/loader.svg" class="w-16 h-16" />
+            class="absolute top-0 left-0 w-full h-full bg-gray-900/80 z-50 flex items-center justify-center">
+            <div class="w-40 h-40">
+                <img src="/images/loader.gif" class="max-w-full max-h-full" />
+            </div>
         </div>
 
         <div class="w-full relative">
@@ -48,8 +50,8 @@
             <header id="header"
                 class="w-full shadow fixed top-9 z-20 flex px-12 items-center justify-between bg-primary-foreground/70">
                 <div class="w-fit h-16 max-md:py-3 flex items-center">
-                    <a href="index.html" class="text-primary text-2xl font-bold uppercase">
-                        Caster
+                    <a href="index.html" class="inline-block text-primary text-2xl font-bold uppercase h-22 w-44">
+                        <img src="/images/logo.png" class="max-w-full max-h-full" alt="logo" />
                     </a>
                 </div>
 
@@ -124,8 +126,8 @@
             </header>
 
             <div class="owl-carousel w-full h-scree" id="banner-carousel">
-                <div class="item bg-banner-1 bg-top h-screen bg-cover">
-                    <div class="w-full h-screen bg-black/40 px-12 flex items-center justify-center">
+                <div class="item bg-banner-1 bg-bottom h-screen bg-cover">
+                    <div class="w-full h-screen bg-black/80 px-12 flex items-center justify-center">
                         <div
                             class="carousel-text opacity-0 flex flex-col text-center items-center justify-center gap-3">
                             <h2 class="delay-500 text-primary-foreground text-xl lg:text-5xl font-bold text-center">
@@ -502,12 +504,8 @@
                             here to answer your
                             questions, discuss your logistics needs, and explore how our trusted, tech-driven solutions
                             can empower your business.
-                            Whether you're curious about our tailored services, need a custom quote, or want to discuss
-                            potential collaborations,
-                            our dedicated team is ready to assist. Connect with us via the form below, or reach out
+                            Connect with us via the form below, or reach out
                             directly by phone or email.
-                            Let’s work together to drive your business forward.
-                            We look forward to hearing from you!
                         </p>
                     </div>
 
@@ -718,14 +716,16 @@
             <div class="w-full grid grid-cols-3 gap-12">
                 <div class="w-full flex items-start flex-col justify-center">
                     <div class="text-5xl font-bold">
-                        <a href="index.html" class="text-primary uppercase">
-                            Caster
+                        <a href="index.html" class="inline-block text-primary text-2xl font-bold uppercase h-22 w-64">
+                            <img src="/images/logo.png" class="max-w-full max-h-full" alt="logo" />
                         </a>
                     </div>
 
                     <p class="mt-7">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
+                        Trust. Technology. Excellence.
+                    </p>
+                    <p class="mt-2">
+                        Driven by Trust, Powered by Technology, Delivered with Excellence
                     </p>
                 </div>
 
@@ -906,8 +906,13 @@
             </div>
         </footer>
 
-        <div class="w-full bg-gray-800 py-2">
-            <p class="text-sm leading-6 text-center text-primary-foreground font-semibold">
+        <div class="w-full bg-gray-800 py-1">
+            <p
+                class="text-sm flex gap-3 items-center justify-center leading-6 text-center text-primary-foreground font-semibold">
+                Powered by
+                <a href="https://www.dwellitsystems.com/" target="_blank" class="w-24 h-10 flex items-center">
+                    <img src="/images/DwellITLogo.png" alt="" class="max-w-full max-h-full" />
+                </a>
                 © 2025 Caster, Inc. All rights reserved.
             </p>
         </div>

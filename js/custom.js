@@ -102,7 +102,10 @@ $(document).ready(function () {
         }
     });
 
+    $('html').addClass('overflow-hidden');
+
     setTimeout(() => {
         $("#loader").hide();
-    }, 1000);
+        $('html').removeClass('overflow-hidden');
+    }, 2000);
 });
