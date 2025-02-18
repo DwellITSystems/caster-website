@@ -2,7 +2,7 @@ tailwind.config = {
     theme: {
         extend: {
             backgroundImage: {
-                "banner-1": "url('/images/banner/banner-1.png')",
+                "banner-1": "url('/images/banner/banner-main.png')",
                 "banner-2": "url('/images/banner/banner-2.png')",
                 "banner-3": "url('/images/banner/banner-3.png')",
                 "banner-4": "url('/images/banner/banner-4.jpg')",
