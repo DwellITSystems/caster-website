@@ -3,10 +3,11 @@ tailwind.config = {
         extend: {
             backgroundImage: {
                 "banner-1": "url('/images/banner/banner-1.png')",
-                "banner-2": "url('/images/banner/banner-2.jpg')",
-                "banner-3": "url('/images/banner/banner-3.jpg')",
+                "banner-2": "url('/images/banner/banner-2.png')",
+                "banner-3": "url('/images/banner/banner-3.png')",
                 "banner-4": "url('/images/banner/banner-4.jpg')",
-                "banner-5": "url('/images/banner/demo.jpg')"
+                "banner-5": "url('/images/banner/demo.jpg')",
+                "about-pattern": "url('/images/banner/about.jpg')"
             },
             colors: {
                 "primary": "rgba(var(--primary-color),1)",

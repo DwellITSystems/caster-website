@@ -6,43 +6,6 @@
             "title": "<span class='text-primary'>Who</span> We Are",
             "content": "Caster Logistics is a trusted name in Kerala’s logistics industry, recognized for its unwavering commitment to excellence, innovation, and customer satisfaction. What started as a small venture with a single vehicle and a bold vision has evolved into a thriving enterprise with a fleet of 12 trucks and an extensive logistics network spanning multiple states. Our dedication to efficiency, reliability, and service quality has positioned us as a preferred partner for businesses seeking seamless transportation solutions.",
             "subItems": []
-        },
-        {
-            "id": 2,
-            "title": "<span class='text-primary'>Growth</span> Story",
-            "content": "Our journey began in 2016 with nothing but a mini truck, a strong work ethic, and an ambition to make a mark in the logistics industry. Determined to build trust in a competitive market, our founder personally handled deliveries, ensuring reliability and customer satisfaction from day one. Those early years were shaped by long hours, relentless perseverance, and an unshakable belief in the power of dedication. <br/> <br/> From providing dependable transport services to local businesses, we steadily expanded, embracing innovation and customer-centric strategies that set us apart. Through years of hard work, adaptability, and a deep understanding of the logistics landscape, we have grown into a well-established brand offering seamless supply chain solutions across the country. <br/> <br/> Today, our success is built on the trust of our clients, the expertise of our team, and our continuous pursuit of excellence. As we move forward, we remain committed to enhancing our services, leveraging technology, and strengthening our network to keep businesses moving efficiently.",
-            "subItems": []
-        },
-        {
-            "id": 3,
-            "title": "<span class='text-primary'>Our</span> Vision",
-            "content": "Be a leading force in the logistics industry, delivering seamless, efficient, and technology-driven transportation solutions that empower businesses of all sizes, while driving economic growth across India.",
-            "subItems": []
-        },
-        {
-            "id": 4,
-            "title": "<span class='text-primary'>Mission</span> Statement",
-            "content": "Our mission is to deliver reliable, cost-effective logistics solutions for businesses of all sizes by leveraging technology and expertise, ensuring timely and secure transportation, and building lasting partnerships based on trust and excellence.",
-            "subItems": []
-        },
-        {
-            "id": 5,
-            "title": "<span class='text-primary'>Our</span> Core Values",
-            "content": "",
-            "subItems": [
-                {
-                    "title": "Reliability",
-                    "content": "Providing timely, secure, and efficient logistics solutions for businesses of all sizes, whether in rural, urban, or metro areas."
-                },
-                {
-                    "title": "Integrity",
-                    "content": "Building trust through transparency, professionalism, and ethical business practices."
-                },
-                {
-                    "title": "Innovation",
-                    "content": "Continuously improving logistics operations with technology and smarter strategies to enhance service quality."
-                }
-            ]
         }
     ],
     "service": [
