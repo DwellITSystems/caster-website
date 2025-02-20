@@ -49,10 +49,9 @@
                 </div>
             </div>
 
-            <header id="header"
-                class="w-full shadow fixed top-9 z-20 flex px-12 items-center justify-between bg-primary-foreground/70">
+            <header id="header" class="w-full shadow fixed top-9 z-20 flex px-12 items-center justify-between bg-white">
                 <div class="w-fit h-16 max-md:py-3 flex items-center">
-                    <a href="index.html" class="inline-block text-primary text-2xl font-bold uppercase h-22 w-40">
+                    <a href="index.html" class="inline-block text-primary text-2xl font-bold uppercase w-[200px]">
                         <img src="/images/logo.png" class="max-w-full max-h-full" alt="logo" />
                     </a>
                 </div>
@@ -295,7 +294,7 @@
         <section id="services" class="w-full px-12 py-16 border-b">
         </section>
 
-        <section id="clients" class="w-full px-12 py-16 border-b bg-primary-foreground">
+        <section id="clients" class="w-full px-12 py-16 border-b bg-primary-foreground hidden">
             <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                 <h2 class="text-4xl font-semibold text-gray-900 text-center" id="clients-header"></h2>
                 <p class="text-center text-md mt-3 leading-relaxed" id="clients-content"></p>
@@ -322,7 +321,7 @@
             </div>
         </section>
 
-        <section class="w-full px-12 py-16 border-b relative">
+        <section class="w-full px-12 py-16 border-b relative hidden">
             <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                 <h2 class="text-4xl font-semibold text-gray-900 text-center">
                     Our <span class="text-primary">Testimonial</span>
@@ -434,7 +433,7 @@
             <div class="w-full mt-6">
                 <div class="owl-carousel owl-theme" id="product-carousel">
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
-                        class="item relative group cursor-pointer overflow-hidden">
+                        class="fleet-items item relative group cursor-pointer overflow-hidden">
                         <div class="w-full h-80">
                             <img src="/images/fleet/fleet-1.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110 object-cover w-full h-full">
@@ -459,7 +458,7 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000"
-                        class="item relative group cursor-pointer overflow-hidden">
+                        class="fleet-items item relative group cursor-pointer overflow-hidden">
                         <div class="w-full h-80">
                             <img src="/images/fleet/fleet-2.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110 object-cover w-full h-full">
@@ -483,7 +482,7 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000"
-                        class="item relative group cursor-pointer overflow-hidden">
+                        class="fleet-items item relative group cursor-pointer overflow-hidden">
                         <div class="w-full h-80">
                             <img src="/images/fleet/fleet-3.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110 object-cover w-full h-full">
@@ -507,7 +506,7 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000"
-                        class="item relative group cursor-pointer overflow-hidden">
+                        class="fleet-items item relative group cursor-pointer overflow-hidden">
                         <div class="w-full h-80">
                             <img src="/images/fleet/fleet-4.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110 object-cover w-full h-full">
@@ -531,7 +530,7 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000"
-                        class="item relative group cursor-pointer overflow-hidden">
+                        class="fleet-items item relative group cursor-pointer overflow-hidden">
                         <div class="w-full h-80">
                             <img src="/images/fleet/fleet-5.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110 object-cover w-full h-full">
@@ -555,7 +554,7 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000"
-                        class="item relative group cursor-pointer overflow-hidden">
+                        class="fleet-items item relative group cursor-pointer overflow-hidden">
                         <div class="w-full h-80">
                             <img src="/images/fleet/fleet-6.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110 object-cover w-full h-full">
@@ -579,7 +578,7 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000"
-                        class="item relative group cursor-pointer overflow-hidden">
+                        class="fleet-items item relative group cursor-pointer overflow-hidden">
                         <div class="w-full h-80">
                             <img src="/images/fleet/fleet-7.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110 object-cover w-full h-full">
@@ -603,32 +602,7 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000"
-                        class="item relative group cursor-pointer overflow-hidden">
-                        <div class="w-full h-80">
-                            <img src="/images/fleet/fleet-8.jpg" alt="Product 3"
-                                class="transition duration-200 group-hover:scale-110 object-cover w-full h-full">
-                        </div>
-                        <div
-                            class="flex items-center justify-center bg-black/50 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-                            <span class="border rounded-full p-2 transition-all duration-300 ease-in-out">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    strokeWidth="1.5" stroke="currentColor"
-                                    class="size-8 transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:stroke-primary-foreground">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                        d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-                                </svg>
-                            </span>
-                        </div>
-
-                        <div class="w-full bg-gray-900 px-2 py-4">
-                            <h3 class="font-bold text-md text-center text-primary-foreground text-[13px]">Mahindra Furio
-                                & Ashok
-                                LeylandE comet</h3>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000"
-                        class="item relative group cursor-pointer overflow-hidden">
+                        class="fleet-items item relative group cursor-pointer overflow-hidden">
                         <div class="w-full h-80">
                             <img src="/images/fleet/fleet-9.jpg" alt="Product 3"
                                 class="transition duration-200 group-hover:scale-110 object-cover w-full h-full">
@@ -1036,24 +1010,6 @@
                             </div>
                         </div>
 
-                        <div data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000"
-                            class="gallery-item item relative group cursor-pointer overflow-hidden rounded-lg">
-                            <div class="w-full h-80">
-                                <img src="/images/gallery/gallery-15.jpg" alt=""
-                                    class="transition duration-200 object-cover group-hover:scale-110 w-full h-full">
-                            </div>
-                            <div
-                                class="flex items-center justify-center bg-black/50 text-primary-foreground w-full h-full absolute top-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-                                <span class="border rounded-full p-2 transition-all duration-300 ease-in-out">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        strokeWidth="1.5" stroke="currentColor"
-                                        class="size-8 transition-transform duration-500 ease-in-out group-hover:rotate-180 group-hover:stroke-primary-foreground">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
-                                            d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1323,7 +1279,7 @@
                 <div class="bg-secondary overflow-x-auto max-h-[80vh]">
                     <div class="w-full flex">
                         <div class="w-full">
-                            <div class="w-full h-[500px] flex justify-center">
+                            <div class="w-full h-[550px] flex justify-center">
                                 <img id="service-modal-img" alt=""
                                     class="inset-0 max-h-full shadow-xl max-w-full object-cover" />
                             </div>
@@ -1335,7 +1291,6 @@
 
                             <div id="service-sub-items" class="mt-3"></div>
 
-
                         </div>
                     </div>
                 </div>
@@ -1346,10 +1301,12 @@
     <button class="hidden" data-modal-target="gallery-modal" id="gallery-modal-open" data-modal-toggle="gallery-modal"
         type="button"></button>
 
-    <div id="gallery-modal" tabindex="-1" aria-hidden="true"
+    <div id="gallery-modal" tabindex="-1" aria-hidden="true" data-aos="zoom-in" data-aos-delay="100"
+        data-aos-duration="1000"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative p-4 w-full max-w-xl max-h-full">
-            <div class="relative bg-white shadow">
+        <div class="relative p-4 w-full max-w-fit max-h-full">
+            <div class="relative bg-white shadow transition-transform 
+              duration-300 transform scale-90">
                 <button type="button"
                     class="absolute end-4 top-4 modal-cancel-btn text-gray-400 bg-primary-foreground hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
                     data-modal-hide="gallery-modal">
@@ -1361,12 +1318,14 @@
                     <span class="sr-only">Close modal</span>
                 </button>
 
-                <div class="bg-secondary overflow-x-auto max-h-[80vh]">
+                <div class="bg-secondary overflow-x-auto max-h-[85vh]">
                     <div class="w-full flex">
                         <div class="w-full">
-                            <div class="w-full h-[500px] flex justify-center">
-                                <img id="gallery-modal-img" alt=""
-                                    class="inset-0 h-full shadow-xl w-full object-cover" />
+                            <div class="w-full h-[350px] flex justify-center items-center">
+                                <div class="w-full h-[350px] flex justify-center">
+                                    <img id="gallery-modal-img" alt=""
+                                        class="inset-0 border-8 max-h-full shadow-xl max-w-full object-cover" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1471,7 +1430,7 @@
 
             $("#services").on('click', '.service-view', function () {
                 var id = $(this).attr('id');
-
+                var subItems = "";
                 $("#modal-open").trigger('click');
 
                 $.getJSON('./json/data.json', function (data) {
@@ -1483,8 +1442,7 @@
                                         $("#service-modal-img").attr('src', vs.image);
                                         $("#service-modal-text").text(vs.title);
                                         $("#service-content").text(vs.content);
-                                        var subItems = "";
-                                        console.log(vs)
+                                        $("#service-sub-items").html('');
                                         $.each(vs.subItems, function (sd, s) {
                                             $.each(s.items, function (sd, s) {
                                                 subItems += '<div class="font-medium flex flex-row items-start gap-2 mt-2">'
@@ -1503,7 +1461,7 @@
 
             });
 
-            $(".gallery-item").click(function () {
+            $(".gallery-item, .fleet-items").click(function () {
                 $("#gallery-modal-open").trigger('click');
                 var imgSrc = $(this).find('img').attr('src');
                 $("#gallery-modal-img").attr('src', imgSrc);
