@@ -28,13 +28,13 @@ $(document).ready(function () {
             }
             else if (key == 'service') {
                 $.each(value, function (s, v) {
-                    serviceHTML += '<div class="w-full aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">'
+                    serviceHTML += '<div class="w-full service-view aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">'
                     serviceHTML += '<h2 class="text-4xl font-semibold text-gray-900 text-center">' + v.title + '</h2>'
                     serviceHTML += '<p class="text-center text-md mt-3 leading-relaxed">' + v.content + '</p>'
                     serviceHTML += '</div>'
                     serviceHTML += '<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8 mt-16 aos-init aos-animate">'
                     $.each(v.items, function (as, vs) {
-                        serviceHTML += '<div data-aos="fade-up" data-aos-delay="' + as * 400 + '" data-aos-duration="1000"  class="service-view cursor-pointer group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">'
+                        serviceHTML += '<div id="' + vs.id + '" data-aos="fade-up" data-aos-delay="' + as * 400 + '" data-aos-duration="1000"  class="service-view cursor-pointer group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">'
                         serviceHTML += '<img src="' + vs.image + '" loading = "lazy" alt = "" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110">'
                         serviceHTML += '<div class="relative w-full bg-gray-900/80 flex flex-col items-center justify-center py-3 px-3 z-50 transition-opacity duration-300 ease-in-out group-hover:opacity-0">'
                         serviceHTML += '<h2 class="text-center text-primary-foreground font-bold text-md">' + vs.title + '</h2>'
