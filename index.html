@@ -27,8 +27,9 @@
         </div>
 
         <div class="w-full relative">
-            <div class="w-full flex bg-tertiary-color text-primary-foreground px-12 py-2 mb-auto">
-                <div class="w-full flex items-center gap-2">
+            <div
+                class="w-full flex flex-row max-md:flex-col bg-tertiary-color text-primary-foreground max-md:px-2 px-12 py-2 mb-auto">
+                <div class="w-full flex max-md:justify-center items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor" class="size-5">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -38,7 +39,7 @@
                     <a href="tel:7907290916" class="text-sm font-semibold">+91 7907290916</a>
                 </div>
 
-                <div class="w-full flex items-center justify-end gap-2">
+                <div class="w-full flex max-md:justify-center max-md:mt-2 items-center justify-end gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor" class="size-5">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -49,9 +50,11 @@
                 </div>
             </div>
 
-            <header id="header" class="w-full shadow fixed top-9 z-20 flex px-12 items-center justify-between bg-white">
+            <header id="header"
+                class="w-full shadow fixed top-9 max-md:top-16 z-20 flex max-md:px-4 px-12 items-center justify-between bg-white">
                 <div class="w-fit h-16 max-md:py-3 flex items-center">
-                    <a href="index.html" class="inline-block text-primary text-2xl font-bold uppercase w-[200px]">
+                    <a href="index.html"
+                        class="inline-block text-primary text-2xl font-bold uppercase max-md:w-[100px] w-[200px]">
                         <img src="/images/logo.png" class="max-w-full max-h-full" alt="logo" />
                     </a>
                 </div>
@@ -124,7 +127,29 @@
                         </li>
                     </ul>
                 </nav>
+
+                <div class="md:hidden cursor-pointer" id="hamburger">
+                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
             </header>
+
+            <div class="md:hidden bg-black mt-9 text-white space-y-4 p-4 hidden text-sm" id="mobile-menu">
+                <a href="#" class="block hover:text-primary res-li">Home</a>
+                <a href="#about" class="block hover:text-primary res-li">About US</a>
+                <a href="about.html#about" class="block hover:text-primary res-li ml-6">Our Growth</a>
+                <a href="about.html#visionmission" class="block hover:text-primary res-li ml-6">Vision Mission &
+                    Value</a>
+                <a href="#clients" class="block hover:text-primary res-li ml-6">Our Clients</a>
+                <a href="#gallery" class="block hover:text-primary res-li ml-6">Our Gallery</a>
+                <a href="#services" class="block hover:text-primary res-li">Services</a>
+                <a href="#fleet" class="block hover:text-primary res-li">Fleet</a>
+                <a class="block hover:text-primary res-li">Careers</a>
+                <a href="#contact" class="block hover:text-primary res-li">Contact US</a>
+                <a href="#" class="block hover:text-primary res-li">Employee Login</a>
+            </div>
 
             <div class="owl-carousel w-full h-scree" id="banner-carousel">
                 <div class="item bg-banner-1 bg-bottom h-screen bg-cover">
@@ -209,21 +234,23 @@
             </div>
         </div>
 
-        <section id="about" class="w-full px-12 py-16 bg-gray-900 leading-relaxed flex gap-8 relative">
-            <div class="w-1/5 flex items-center" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <h2 class="text-4xl font-semibold text-primary-foreground">
+        <section id="about"
+            class="w-full max-md:flex-col max-md:px-4 px-12 max-md:py-8 py-16 bg-gray-900 leading-relaxed flex max-md:gap-0 gap-8 relative">
+            <div class="w-1/5 max-md:w-full flex max-md:justify-center items-center" data-aos="fade-right"
+                data-aos-delay="100" data-aos-duration="1000">
+                <h2 class="max-md:text-2xl text-4xl font-semibold text-primary-foreground">
                     About <span class="text-primary">Caster</span>
                 </h2>
             </div>
 
-            <div class="w-4/5">
+            <div class="w-4/5 max-md:w-full">
                 <div id="about-view"></div>
             </div>
         </section>
 
         <section class="w-full px-12 py-16 hidden">
             <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <h2 class="text-4xl font-semibold text-gray-900 text-center">
+                <h2 class="max-md:text-2xl text-4xl font-semibold text-gray-900 text-center">
                     Working <span class="text-primary">Process</span>
                 </h2>
                 <p class="text-center">
@@ -291,13 +318,13 @@
             </div>
         </section>
 
-        <section id="services" class="w-full px-12 py-16 border-b">
+        <section id="services" class="w-full max-md:px-4 px-12 max-md:py-8 py-16 border-b">
         </section>
 
         <section id="clients" class="w-full px-12 py-16 border-b bg-primary-foreground hidden">
             <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <h2 class="text-4xl font-semibold text-gray-900 text-center" id="clients-header"></h2>
-                <p class="text-center text-md mt-3 leading-relaxed" id="clients-content"></p>
+                <h2 class="max-md:text-2xl text-4xl font-semibold text-gray-900 text-center" id="clients-header"></h2>
+                <p class="text-center max-md:text-sm text-md mt-3 leading-relaxed" id="clients-content"></p>
             </div>
 
             <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" class="w-full py-12 mt-10">
@@ -323,7 +350,7 @@
 
         <section class="w-full px-12 py-16 border-b relative hidden">
             <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <h2 class="text-4xl font-semibold text-gray-900 text-center">
+                <h2 class="max-md:text-2xl text-4xl font-semibold text-gray-900 text-center">
                     Our <span class="text-primary">Testimonial</span>
                 </h2>
                 <p class="text-center text-md mt-3 leading-relaxed">
@@ -384,13 +411,13 @@
                     </div> -->
         </section>
 
-        <section id="fleet" class="w-full px-12 py-16 border-b  bg-primary-foreground">
+        <section id="fleet" class="w-full max-md:px-4 px-12 py-16 max-md:py-8 border-b  bg-primary-foreground">
             <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <h2 class="text-4xl font-semibold text-gray-900 text-center">
+                <h2 class="max-md:text-2xl text-4xl font-semibold text-gray-900 text-center">
                     Our <span class="text-primary">Fleet</span>
                 </h2>
 
-                <p class="text-center text-md mt-3 leading-relaxed">
+                <p class="text-center max-md:text-sm text-md mt-3 leading-relaxed">
                     Our fleet is the backbone of our commitment to excellence in transportation. We pride ourselves on a
                     modern,
                     well-maintained range of vehicles that are engineered to meet the rigorous demands of today’s
@@ -629,13 +656,13 @@
         </section>
 
         <section id="contact" class="w-full border-b">
-            <div class="w-full flex gap-12">
-                <div class="w-full mt-16 pl-12">
+            <div class="w-full flex max-md:flex-col">
+                <div class="w-full py-12 px-12">
                     <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                        <h2 class="text-4xl font-semibold text-center">
+                        <h2 class="max-md:text-2xl text-4xl font-semibold text-center">
                             Get in <span class="text-primary">Touch</span>
                         </h2>
-                        <p class="text-center text-md mt-3 leading-relaxed">
+                        <p class="text-center max-md:text-sm text-md mt-3 leading-relaxed">
                             At Caster Logistics, every inquiry is a step toward building a stronger partnership. We’re
                             here to answer your
                             questions, discuss your logistics needs, and explore how our trusted, tech-driven solutions
@@ -653,9 +680,9 @@
                     </div> -->
 
                     <form action="mailto:rahulgopi.iva@gmail.com" method="post" enctype="text/plain">
-                        <div class="w-full grid grid-cols-2 gap-6 mt-16" data-aos="zoom-in" data-aos-delay="100"
-                            data-aos-duration="1000">
-                            <div class="w-full col-span-2">
+                        <div class="w-full grid max-md:grid-cols-1 grid-cols-2 gap-6 mt-16" data-aos="zoom-in"
+                            data-aos-delay="100" data-aos-duration="1000">
+                            <div class="w-full col-span-2 max-md:col-span-1">
                                 <input type="text" name="name"
                                     class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
                                     placeholder="Your Name">
@@ -705,9 +732,9 @@
             </div>
         </section>
 
-        <section id="gallery" class="w-full px-12 py-16 border-b bg-primary-foreground">
+        <section id="gallery" class="w-full px-12 py-16 max-md:py-8 border-b bg-primary-foreground">
             <div class="w-full" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <h2 class="text-4xl font-semibold text-gray-900 text-center">
+                <h2 class="max-md:text-2xl text-4xl font-semibold text-gray-900 text-center">
                     Our <span class="text-primary">Gallery</span>
                 </h2>
                 <p class="text-center hidden">
@@ -1015,9 +1042,9 @@
         </section>
 
         <section class="w-full bg-gray-700 px-12 py-4">
-            <div class="w-full flex text-primary-foreground">
+            <div class="w-full flex max-md:flex-col text-primary-foreground">
                 <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-                    class="w-full flex items-center gap-2 text-lg">
+                    class="w-full flex max-md:flex-col items-center gap-2 max-md:text-sm text-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor" class="size-5">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -1028,7 +1055,7 @@
                 </div>
 
                 <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-                    class="w-full flex items-center justify-end gap-2 text-lg">
+                    class="w-full flex  max-md:flex-col items-center max-md:justify-center max-md:mt-3 justify-end gap-2 max-md:text-sm text-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor" class="size-5">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -1041,7 +1068,7 @@
         </section>
 
         <footer class="w-full bg-gray-900 px-12 py-10 mt-0 text-primary-foreground">
-            <div class="w-full grid grid-cols-4 gap-12">
+            <div class="w-full grid grid-cols-4 max-md:grid-cols-1 gap-12">
                 <div class="w-full flex items-start flex-col justify-center" data-aos="fade-in" data-aos-delay="100"
                     data-aos-duration="1000">
                     <div class="text-5xl font-bold">
@@ -1050,10 +1077,10 @@
                         </a>
                     </div>
 
-                    <p class="mt-7">
+                    <p class="w-full mt-7 max-md:text-center max-md:text-sm">
                         Trust. Technology. Excellence.
                     </p>
-                    <p class="mt-2">
+                    <p class="w-full mt-2 max-md:text-center max-md:text-sm">
                         Driven by Trust, Powered by Technology, Delivered with Excellence
                     </p>
                 </div>
@@ -1235,16 +1262,16 @@
 
                 <div class="w-full" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
                     <h2 class="font-semibold text-lg">ADDRESS</h2>
-                    <p class="text-primary-foreground mt-4">Sree Valsam Building, XIV/108 Thaikkattukara PO</p>
-                    <p class="text-primary-foreground mt-4">Near Muttom Metro Station, Pillar No 179</p>
-                    <p class="text-primary-foreground mt-4">Aluva, Ernakulam, Kerala - Pincode: 683106</p>
+                    <p class="text-primary-foreground mt-4 text-sm">Sree Valsam Building, XIV/108 Thaikkattukara PO</p>
+                    <p class="text-primary-foreground mt-4 text-sm">Near Muttom Metro Station, Pillar No 179</p>
+                    <p class="text-primary-foreground mt-4 text-sm">Aluva, Ernakulam, Kerala - Pincode: 683106</p>
                 </div>
             </div>
         </footer>
 
         <div class="w-full bg-gray-800 py-1">
             <p
-                class="text-sm flex gap-3 items-center justify-center leading-6 text-center text-primary-foreground font-semibold">
+                class="text-sm flex max-md:flex-col gap-3 items-center justify-center leading-6 text-center text-primary-foreground font-semibold">
                 Powered by
                 <a href="https://www.dwellitsystems.com/" target="_blank" class="w-24 h-10 flex items-center">
                     <img src="/images/DwellITLogo.png" alt="" class="max-w-full max-h-full" />
@@ -1357,9 +1384,79 @@
                 <div class="bg-secondary overflow-x-auto max-h-[80vh]">
                     <div class="w-full flex">
                         <div class="w-full">
-                            <div class="w-full h-[500px] flex justify-center">
-                                <iframe class="w-full"
-                                    src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"></iframe>
+                            <div class="w-full h-[430px] flex justify-center">
+                                <form method="post" enctype="text/plain" class="w-full px-6">
+                                    <div class="w-full grid max-md:grid-cols-1 grid-cols-2 gap-4 mt-4"
+                                        data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+                                        <div class="w-full">
+                                            <lable class="text-sm">FirstName</lable>
+                                            <input type="text" name="name"
+                                                class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                placeholder="Your Name">
+                                        </div>
+
+                                        <div class="w-full">
+                                            <lable class="text-sm">Email</lable>
+                                            <input type="email"
+                                                class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                placeholder="Email">
+                                        </div>
+
+                                        <div class="w-full">
+                                            <lable class="text-sm">Mobile No</lable>
+                                            <input type="text"
+                                                class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                placeholder="Mobile No">
+                                        </div>
+
+                                        <div class="w-full">
+                                            <lable class="text-sm">Address</lable>
+                                            <input type="text"
+                                                class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                placeholder="Address">
+                                        </div>
+
+                                        <div class="w-full">
+                                            <lable class="text-sm">City</lable>
+                                            <input type="text"
+                                                class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                placeholder="City">
+                                        </div>
+
+                                        <div class="w-full">
+                                            <lable class="text-sm">State</lable>
+                                            <input type="text"
+                                                class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                placeholder="State">
+                                        </div>
+
+                                        <div class="w-full">
+                                            <lable class="text-sm">Pincode</lable>
+                                            <input type="text"
+                                                class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                placeholder="Pincode">
+                                        </div>
+
+                                        <div class="w-full">
+                                            <lable class="text-sm">Attach Resume</lable>
+                                            <input type="file"
+                                                class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                placeholder="Attach Resume">
+                                        </div>
+
+                                        <div class="w-full">
+                                            <button type="button"
+                                                class="bg-primary rounded font-semibold flex items-center justify-center gap-2 text-primary-foreground w-fit px-8 py-2 text-sm transition-opacity duration-300 ease-in-out">
+                                                Send
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    strokeWidth="1.5" stroke="currentColor" class="size-6">
+                                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -1389,13 +1486,88 @@
                     </button>
                 </div>
 
-                <div class="bg-secondary overflow-x-auto max-h-[80vh]">
+                <div class="bg-secondary overflow-x-auto max-h-[100vh]">
                     <div class="w-full flex">
                         <div class="w-full">
-                            <div class="w-full h-[500px] flex justify-center">
-                                <iframe class="w-full"
-                                    src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"></iframe>
-                            </div>
+                            <form method="post" enctype="text/plain" class="w-full px-6">
+                                <div class="w-full grid max-md:grid-cols-1 grid-cols-2 gap-4 mt-4" data-aos="zoom-in"
+                                    data-aos-delay="100" data-aos-duration="1000">
+                                    <div class="w-full">
+                                        <lable class="text-sm">Name</lable>
+                                        <input type="text" name="name"
+                                            class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                            placeholder="Name">
+                                    </div>
+
+                                    <div class="w-full">
+                                        <lable class="text-sm">Business Name</lable>
+                                        <input type="text"
+                                            class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                            placeholder="Business Name">
+                                    </div>
+
+                                    <div class="w-full">
+                                        <lable class="text-sm">Mobile No</lable>
+                                        <input type="text"
+                                            class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                            placeholder="Mobile No">
+                                    </div>
+
+                                    <div class="w-full">
+                                        <lable class="text-sm">Email</lable>
+                                        <input type="email"
+                                            class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                            placeholder="Email">
+                                    </div>
+
+                                    <div class="w-full col-span-2">
+                                        <lable class="text-sm">Address</lable>
+                                        <input type="text"
+                                            class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                            placeholder="Address">
+                                    </div>
+
+                                    <div class="w-full">
+                                        <lable class="text-sm">City</lable>
+                                        <input type="text"
+                                            class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                            placeholder="City">
+                                    </div>
+
+                                    <div class="w-full">
+                                        <lable class="text-sm">State</lable>
+                                        <input type="text"
+                                            class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                            placeholder="State">
+                                    </div>
+
+                                    <div class="w-full">
+                                        <lable class="text-sm">Pincode</lable>
+                                        <input type="text"
+                                            class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                            placeholder="Pincode">
+                                    </div>
+
+                                    <div class="w-full">
+                                        <lable class="text-sm">Requirement (free text)</lable>
+                                        <input type="text"
+                                            class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                            placeholder="Requirement (free text)">
+                                    </div>
+
+                                    <div class="w-full mb-10">
+                                        <button type="button"
+                                            class="bg-primary rounded font-semibold flex items-center justify-center gap-2 text-primary-foreground w-fit px-8 py-2 text-sm transition-opacity duration-300 ease-in-out">
+                                            Send
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                strokeWidth="1.5" stroke="currentColor" class="size-6">
+                                                <path strokeLinecap="round" strokeLinejoin="round"
+                                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -1409,18 +1581,18 @@
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/aos.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <button type="button" id="quote-btn">sdvdsv</button>
+
     <script>
         $(window).on('scroll', function () {
             var scrollPosition = $(window).scrollTop();
             var $header = $('header');
 
             if (scrollPosition > 50) {
-                $header.removeClass('bg-primary-foreground/80 top-9 md:top-9 animate-fadeInUp')
+                $header.removeClass('bg-primary-foreground/80 top-9 max-md:top-16 animate-fadeInUp')
                     .addClass('bg-primary-foreground/70 animate-fadeInDown top-0');
             } else {
                 $header.removeClass('bg-primary-foreground/70 animate-fadeInDown top-0')
-                    .addClass('bg-primary-foreground/80 top-9 md:top-9 animate-fadeInUp');
+                    .addClass('bg-primary-foreground/80 top-9 max-md:top-16 animate-fadeInUp');
             }
         });
 
@@ -1473,6 +1645,10 @@
             setTimeout(() => {
                 $("#getin-qutoe-modal-open").trigger('click');
             }, 5000);
+
+            $("#hamburger").click(function () {
+                $("#mobile-menu").toggle();
+            });
         });
     </script>
 </body>

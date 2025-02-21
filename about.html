@@ -27,8 +27,9 @@
         </div>
 
         <div class="w-full relative">
-            <div class="w-full flex bg-tertiary-color text-primary-foreground px-12 py-2 mb-auto">
-                <div class="w-full flex items-center gap-2">
+            <div
+                class="w-full flex flex-row max-md:flex-col bg-tertiary-color text-primary-foreground max-md:px-2 px-12 py-2 mb-auto">
+                <div class="w-full flex max-md:justify-center items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor" class="size-5">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -38,7 +39,7 @@
                     <a href="tel:7907290916" class="text-sm font-semibold">+91 7907290916</a>
                 </div>
 
-                <div class="w-full flex items-center justify-end gap-2">
+                <div class="w-full flex max-md:justify-center max-md:mt-2 items-center justify-end gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor" class="size-5">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -50,9 +51,10 @@
             </div>
 
             <header id="header"
-                class="w-full shadow fixed top-9 z-20 flex px-12 items-center justify-between bg-primary-foreground/70">
+                class="w-full shadow fixed top-9 max-md:top-16 z-20 flex px-12 max-md:px-4 items-center justify-between bg-primary-foreground/70">
                 <div class="w-fit h-16 max-md:py-3 flex items-center">
-                    <a href="index.html" class="inline-block text-primary text-2xl font-bold uppercase h-22 w-40">
+                    <a href="index.html"
+                        class="inline-block text-primary text-2xl font-bold uppercase max-md:w-[100px] w-[200px]">
                         <img src="/images/logo.png" class="max-w-full max-h-full" alt="logo" />
                     </a>
                 </div>
@@ -125,11 +127,33 @@
                         </li>
                     </ul>
                 </nav>
+
+                <div class="md:hidden cursor-pointer" id="hamburger">
+                    <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
             </header>
+
+            <div class="md:hidden bg-black mt-9 text-white space-y-4 p-4 hidden text-sm" id="mobile-menu">
+                <a href="#" class="block hover:text-primary res-li">Home</a>
+                <a href="about.html" class="block hover:text-primary res-li">About US</a>
+                <a href="#about" class="block hover:text-primary res-li ml-6">Our Growth</a>
+                <a href="#visionmission" class="block hover:text-primary res-li ml-6">Vision Mission &
+                    Value</a>
+                <a href="index.html#clients" class="block hover:text-primary res-li ml-6">Our Clients</a>
+                <a href="index.html#gallery" class="block hover:text-primary res-li ml-6">Our Gallery</a>
+                <a href="index.html#services" class="block hover:text-primary res-li">Services</a>
+                <a href="index.html#fleet" class="block hover:text-primary res-li">Fleet</a>
+                <a class="block hover:text-primary res-li">Careers</a>
+                <a href="index.html#contact" class="block hover:text-primary res-li">Contact US</a>
+                <a href="#" class="block hover:text-primary res-li">Employee Login</a>
+            </div>
 
             <div class="w-full h-full bg-about-pattern bg-bottom min-h-[50vh] bg-cover">
                 <div class="bg-black/60 h-full min-h-[50vh] flex flex-col items-center justify-center">
-                    <h2 class="text-primary-foreground text-3xl font-semibold uppercase">
+                    <h2 class="max-md:text-2xl text-primary-foreground text-3xl font-semibold uppercase">
                         <span class="text-primary">About</span> Us
                     </h2>
                     <div class="relative my-4 w-20">
@@ -142,15 +166,16 @@
         </div>
 
         <section id="about"
-            class="w-full px-12 bg-gray-900 text-primary-foreground py-16 leading-relaxed flex gap-8 relative">
-            <div class="w-1/5 flex items-center" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <h2 class="text-4xl font-semibold text-primary-foreground">
+            class="w-full max-md:flex-col px-12 bg-gray-900 text-primary-foreground py-16 leading-relaxed flex gap-8 relative">
+            <div class="w-1/5 max-md:w-full flex max-md:justify-center items-center" data-aos="fade-right"
+                data-aos-delay="100" data-aos-duration="1000">
+                <h2 class="max-md:text-2xl text-4xl font-semibold text-primary-foreground">
                     Growth <span class="text-primary">Story</span>
                 </h2>
             </div>
 
-            <div class="w-4/5">
-                <p class="font-medium text-md mt-3 leading-relaxed">Our journey began in 2016
+            <div class="w-4/5 max-md:w-full">
+                <p class="font-medium max-md:text-sm text-md mt-3 leading-relaxed">Our journey began in 2016
                     with nothing but a
                     mini truck, a strong work ethic, and an ambition to make a mark in the logistics industry.
                     Determined to build trust
@@ -175,10 +200,10 @@
             </div>
         </section>
 
-        <section id="visionmission" class="w-full leading-relaxed flex gap-8 relative border-t">
-            <div class="w-1/2 bg-primary-foreground px-12 py-16 border-r" data-aos="fade-left" data-aos-delay="100"
-                data-aos-duration="1000">
-                <h2 class="text-4xl font-semibold text-gray-900 text-center">
+        <section id="visionmission" class="w-full leading-relaxed flex max-md:flex-col gap-8 relative border-t">
+            <div class="w-1/2 max-md:w-full bg-primary-foreground px-12 py-16 border-r" data-aos="fade-left"
+                data-aos-delay="100" data-aos-duration="1000">
+                <h2 class="max-md:text-2xl text-4xl font-semibold text-gray-900 text-center">
                     <span class="text-primary">Our </span>Vision
                 </h2>
 
@@ -189,8 +214,9 @@
                 </p>
             </div>
 
-            <div class="w-1/2 px-12 py-16" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <h2 class="text-4xl font-semibold text-gray-900 text-center">
+            <div class="w-1/2 max-md:w-full px-12 py-16" data-aos="fade-right" data-aos-delay="100"
+                data-aos-duration="1000">
+                <h2 class="max-md:text-2xl text-4xl font-semibold text-gray-900 text-center">
                     <span class="text-primary">Mission </span>Statement
                 </h2>
 
@@ -207,15 +233,15 @@
         <section id="vision"
             class="w-full px-12 py-16 leading-relaxed flex gap-8 relative bg-primary-foreground border-t">
             <div class="w-full">
-                <h2 class="text-4xl font-semibold text-gray-900 text-center" data-aos="fade-right" data-aos-delay="100"
-                    data-aos-duration="1000">
+                <h2 class="max-md:text-2xl text-4xl font-semibold text-gray-900 text-center" data-aos="fade-right"
+                    data-aos-delay="100" data-aos-duration="1000">
                     <span class="text-primary">Our </span>Core Values
                 </h2>
 
-                <div class="w-full grid grid-cols-3 gap-8 mt-8">
+                <div class="w-full grid grid-cols-3 max-md:grid-cols-1 gap-8 mt-8">
                     <div class="w-full px-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                         <h3 class="mt-4 text-primary font-semibold text-center text-xl">Reliability</h3>
-                        <p class="font-medium text-md flex items-start gap-2 mt-3 text-center">
+                        <p class="font-medium max-md:text-sm text-md flex items-start gap-2 mt-3 text-center">
                             Providing timely, secure, and
                             efficient logistics solutions for businesses of all
                             sizes,
@@ -226,14 +252,14 @@
 
                     <div class="w-full px-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <h3 class="mt-4 text-primary font-semibold text-center text-xl">Integrity</h3>
-                        <p class="font-medium text-md flex items-start gap-2 mt-3 text-center">
+                        <p class="font-medium max-md:text-sm text-md flex items-start gap-2 mt-3 text-center">
                             Building trust through transparency, professionalism, and ethical business practices.
                         </p>
                     </div>
 
                     <div class="w-full px-2" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
                         <h3 class="mt-4 text-primary font-semibold text-center text-xl">Innovation</h3>
-                        <p class="font-medium text-md flex items-start gap-2 mt-3 text-center">
+                        <p class="font-medium max-md:text-sm text-md flex items-start gap-2 mt-3 text-center">
                             Continuously improving logistics operations with technology and smarter strategies to
                             enhance
                             service quality.
@@ -244,9 +270,9 @@
         </section>
 
         <section class="w-full bg-gray-700 px-12 py-4">
-            <div class="w-full flex text-primary-foreground">
+            <div class="w-full flex max-md:flex-col text-primary-foreground">
                 <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-                    class="w-full flex items-center gap-2 text-lg">
+                    class="w-full flex max-md:flex-col items-center gap-2 max-md:text-sm text-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor" class="size-5">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -257,7 +283,7 @@
                 </div>
 
                 <div data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
-                    class="w-full flex items-center justify-end gap-2 text-lg">
+                    class="w-full flex  max-md:flex-col items-center max-md:justify-center max-md:mt-3 justify-end gap-2 max-md:text-sm text-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                         stroke="currentColor" class="size-5">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -270,7 +296,7 @@
         </section>
 
         <footer class="w-full bg-gray-900 px-12 py-10 mt-0 text-primary-foreground">
-            <div class="w-full grid grid-cols-4 gap-12">
+            <div class="w-full grid grid-cols-4 max-md:grid-cols-1 gap-12">
                 <div class="w-full flex items-start flex-col justify-center" data-aos="fade-in" data-aos-delay="100"
                     data-aos-duration="1000">
                     <div class="text-5xl font-bold">
@@ -279,10 +305,10 @@
                         </a>
                     </div>
 
-                    <p class="mt-7">
+                    <p class="w-full mt-7 max-md:text-center max-md:text-sm">
                         Trust. Technology. Excellence.
                     </p>
-                    <p class="mt-2">
+                    <p class="w-full mt-2 max-md:text-center max-md:text-sm">
                         Driven by Trust, Powered by Technology, Delivered with Excellence
                     </p>
                 </div>
@@ -464,16 +490,16 @@
 
                 <div class="w-full" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
                     <h2 class="font-semibold text-lg">ADDRESS</h2>
-                    <p class="text-primary-foreground mt-4">Sree Valsam Building, XIV/108 Thaikkattukara PO</p>
-                    <p class="text-primary-foreground mt-4">Near Muttom Metro Station, Pillar No 179</p>
-                    <p class="text-primary-foreground mt-4">Aluva, Ernakulam, Kerala - Pincode: 683106</p>
+                    <p class="text-primary-foreground mt-4 text-sm">Sree Valsam Building, XIV/108 Thaikkattukara PO</p>
+                    <p class="text-primary-foreground mt-4 text-sm">Near Muttom Metro Station, Pillar No 179</p>
+                    <p class="text-primary-foreground mt-4 text-sm">Aluva, Ernakulam, Kerala - Pincode: 683106</p>
                 </div>
             </div>
         </footer>
 
         <div class="w-full bg-gray-800 py-1">
             <p
-                class="text-sm flex gap-3 items-center justify-center leading-6 text-center text-primary-foreground font-semibold">
+                class="text-sm flex max-md:flex-col gap-3 items-center justify-center leading-6 text-center text-primary-foreground font-semibold">
                 Powered by
                 <a href="https://www.dwellitsystems.com/" target="_blank" class="w-24 h-10 flex items-center">
                     <img src="/images/DwellITLogo.png" alt="" class="max-w-full max-h-full" />
@@ -506,9 +532,80 @@
                     <div class="bg-secondary overflow-x-auto max-h-[80vh]">
                         <div class="w-full flex">
                             <div class="w-full">
-                                <div class="w-full h-[500px] flex justify-center">
-                                    <iframe class="w-full"
-                                        src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"></iframe>
+                                <div class="w-full h-[430px] flex justify-center">
+                                    <form method="post" enctype="text/plain" class="w-full px-6">
+                                        <div class="w-full grid max-md:grid-cols-1 grid-cols-2 gap-4 mt-4"
+                                            data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+                                            <div class="w-full">
+                                                <lable class="text-sm">FirstName</lable>
+                                                <input type="text" name="name"
+                                                    class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                    placeholder="Your Name">
+                                            </div>
+
+                                            <div class="w-full">
+                                                <lable class="text-sm">Email</lable>
+                                                <input type="email"
+                                                    class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                    placeholder="Email">
+                                            </div>
+
+                                            <div class="w-full">
+                                                <lable class="text-sm">Mobile No</lable>
+                                                <input type="text"
+                                                    class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                    placeholder="Mobile No">
+                                            </div>
+
+                                            <div class="w-full">
+                                                <lable class="text-sm">Address</lable>
+                                                <input type="text"
+                                                    class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                    placeholder="Address">
+                                            </div>
+
+                                            <div class="w-full">
+                                                <lable class="text-sm">City</lable>
+                                                <input type="text"
+                                                    class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                    placeholder="City">
+                                            </div>
+
+                                            <div class="w-full">
+                                                <lable class="text-sm">State</lable>
+                                                <input type="text"
+                                                    class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                    placeholder="State">
+                                            </div>
+
+                                            <div class="w-full">
+                                                <lable class="text-sm">Pincode</lable>
+                                                <input type="text"
+                                                    class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                    placeholder="Pincode">
+                                            </div>
+
+                                            <div class="w-full">
+                                                <lable class="text-sm">Attach Resume</lable>
+                                                <input type="file"
+                                                    class="h-12 w-full rounded-sm border border-gray-500/30 px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:border-b focus-visible:border-primary disabled:cursor-not-allowed disabled:opacity-50"
+                                                    placeholder="Attach Resume">
+                                            </div>
+
+                                            <div class="w-full">
+                                                <button type="button"
+                                                    class="bg-primary rounded font-semibold flex items-center justify-center gap-2 text-primary-foreground w-fit px-8 py-2 text-sm transition-opacity duration-300 ease-in-out">
+                                                    Send
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                        class="size-6">
+                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -562,11 +659,11 @@
             var $header = $('header');
 
             if (scrollPosition > 50) {
-                $header.removeClass('bg-primary-foreground/80 top-9 md:top-9 animate-fadeInUp')
+                $header.removeClass('bg-primary-foreground/80 top-9 max-md:top-16 animate-fadeInUp')
                     .addClass('bg-primary-foreground/70 animate-fadeInDown top-0');
             } else {
                 $header.removeClass('bg-primary-foreground/70 animate-fadeInDown top-0')
-                    .addClass('bg-primary-foreground/80 top-9 md:top-9 animate-fadeInUp');
+                    .addClass('bg-primary-foreground/80 top-9 max-md:top-16 animate-fadeInUp');
             }
         });
 
@@ -585,6 +682,10 @@
             setTimeout(() => {
                 $("#getin-qutoe-modal-open").trigger('click');
             }, 5000);
+
+            $("#hamburger").click(function () {
+                $("#mobile-menu").toggle();
+            });
         });
     </script>
 </body>
