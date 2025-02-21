@@ -44,7 +44,14 @@
     }
 
     .client-carousel .client-item img {
-        width: auto !important;
+        width: 300 !important;
+    }
+
+    .client-item img {
+        height: 100px !important;
+        object-fit: contain !important;
+        aspect-ratio: 3/2 !important;
+        mix-blend-mode: color-burn;
     }
 
     .mapouter {
