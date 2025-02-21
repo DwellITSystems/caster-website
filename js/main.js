@@ -63,4 +63,25 @@ $(document).ready(function () {
 
         });
     });
+
+    showQutoe();
+
+    function showQutoe() {
+        setTimeout(() => {
+            $("#getin-qutoe-modal-open").trigger('click');
+            localStorage.setItem("popupClosedTime", new Date().getTime());
+        }, 20000);
+    }
+
+    function checkPopupVisibility() {
+        let lastClosed = localStorage.getItem("popupClosedTime");
+        let now = new Date().getTime();
+        let twentyMinutes = 20 * 60 * 1000;
+        console.log(twentyMinutes);
+        if (!lastClosed || (now - lastClosed) >= twentyMinutes) {
+            setTimeout(showQutoe, 20000);
+        }
+    }
+
+    checkPopupVisibility();
 });
