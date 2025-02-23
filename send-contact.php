@@ -26,8 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 465;
 
         // Sender & Recipient
-        $mail->setFrom($email);
-        $mail->addAddress('notifications@dwellitsystems.com', 'Website Request');
+        $mail->setFrom('notifications@dwellitsystems.com');
+        $mail->addAddress('emmanual.nebu@dwellitsystems.com', 'Website Request');
 
         // Email Content
         $mail->isHTML(true);

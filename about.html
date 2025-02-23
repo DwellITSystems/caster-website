@@ -54,7 +54,7 @@
                 class="w-full shadow fixed top-9 max-md:top-16 z-20 flex px-12 max-md:px-4 items-center justify-between bg-primary-foreground/70">
                 <div class="w-fit h-16 max-md:py-3 flex items-center">
                     <a href="index.html"
-                        class="inline-block text-primary text-2xl font-bold uppercase max-md:w-[100px] w-[200px]">
+                        class="inline-block text-primary text-2xl font-bold uppercase max-md:w-[150px] w-[200px]">
                         <img src="/images/logo.png" class="max-w-full max-h-full" alt="logo" />
                     </a>
                 </div>
@@ -136,11 +136,24 @@
                 </div>
             </header>
 
-            <div class="md:hidden bg-black mt-14 text-white space-y-4 p-4 hidden text-sm" id="mobile-menu">
+            <div class="md:hidden fixed z-30 -top-14 h-screen w-full bg-black mt-14 text-white space-y-4 p-4 hidden text-sm"
+                id="mobile-menu">
+                <div class="w-full flex justify-end text-primary mb-6">
+                    <button type="button" id="mobile-menu-close"
+                        class="absolute end-4 top-3 modal-cancel-btn text-gray-400 bg-primary-foreground hover:bg-gray-200 hover:text-gray-900 rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="getin-qutoe-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
                 <a href="#" class="block hover:text-primary res-li">Home</a>
-                <a href="about.html" class="block hover:text-primary res-li">About US</a>
-                <a href="#about" class="block hover:text-primary res-li ml-6">Our Growth</a>
-                <a href="#visionmission" class="block hover:text-primary res-li ml-6">Vision Mission &
+                <a href="index.html#about" class="block hover:text-primary res-li">About US</a>
+                <a href="about.html#about" class="block hover:text-primary res-li ml-6">Our Growth</a>
+                <a href="about.html#visionmission" class="block hover:text-primary res-li ml-6">Vision Mission &
                     Value</a>
                 <a href="index.html#clients" class="block hover:text-primary res-li ml-6">Our Clients</a>
                 <a href="index.html#gallery" class="block hover:text-primary res-li ml-6">Our Gallery</a>
@@ -767,6 +780,14 @@
 
             $("#hamburger").click(function () {
                 $("#mobile-menu").toggle();
+            });
+
+            $("#mobile-menu-close").click(function () {
+                $("#mobile-menu").toggle();
+            });
+
+            $("#mobile-menu-close, .res-li").click(function () {
+                $("#mobile-menu").hide();
             });
         });
     </script>
