@@ -34,7 +34,7 @@ $(document).ready(function () {
                     serviceHTML += '</div>'
                     serviceHTML += '<div class="grid grid-cols-2 max-md:grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8 max-md:mt-6 mt-16 aos-init aos-animate">'
                     $.each(v.items, function (as, vs) {
-                        serviceHTML += '<div id="' + vs.id + '" data-aos="fade-up" data-aos-delay="' + as * 400 + '" data-aos-duration="1000"  class="service-view cursor-pointer group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">'
+                        serviceHTML += '<div id="' + vs.id + '" data-aos="fade-up" data-aos-delay="' + as * 400 + '" data-aos-duration="1000"  class="service-view cursor-pointer group relative flex h-48 max-md:h-72 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">'
                         serviceHTML += '<img src="' + vs.image + '" loading = "lazy" alt = "" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110">'
                         serviceHTML += '<div class="relative w-full bg-gray-900/80 flex flex-col items-center justify-center py-3 px-3 z-50 transition-opacity duration-300 ease-in-out group-hover:opacity-0">'
                         serviceHTML += '<h2 class="text-center text-primary-foreground font-bold max-md:text-sm text-md">' + vs.title + '</h2>'
