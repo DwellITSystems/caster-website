@@ -40,7 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Body    = "<strong>Name:</strong> $name <br><strong>Business Name:</strong> $businessname <br><br><strong>Phone:</strong>$phone<br><br><strong>Email:</strong><br>$email<br><br><strong>Address:</strong><br>$address<br><br><strong>City:</strong><br>$city<br><br><strong>State:</strong><br>$state<br><br><strong>Pincode:</strong><br>$pincode<br><br><strong>requirement:</strong><br>$requirement";
         
         $mail->send();
-        echo "Message sent successfully!";
+        //echo "Message sent successfully!";
+        echo '<script>alert("Message sent successfully!");</script>';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }

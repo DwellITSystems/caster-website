@@ -76,8 +76,7 @@ $(document).ready(function () {
     function checkPopupVisibility() {
         let lastClosed = localStorage.getItem("popupClosedTime");
         let now = new Date().getTime();
-        let twentyMinutes = 20 * 60 * 1000;
-        console.log(twentyMinutes);
+        let twentyMinutes = 20 * 60 * 100;
         if (!lastClosed || (now - lastClosed) >= twentyMinutes) {
             setTimeout(showQutoe, 20000);
         }
