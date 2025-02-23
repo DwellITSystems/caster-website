@@ -23,16 +23,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // SMTP Configuration
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'smtp.dwellitsystems.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'your_email@gmail.com';
-        $mail->Password = 'your_app_password';
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+        $mail->Username = 'notifications@dwellitsystems.com';
+        $mail->Password = 'Dell@2011';
+        $mail->SMTPSecure = ssl;
+        $mail->Port = 465;
 
         // Sender & Recipient
-        $mail->setFrom($email, $name);
-        $mail->addAddress('your_email@gmail.com', 'name');
+        $mail->setFrom($email);
+        $mail->addAddress('notifications@dwellitsystems.com', 'Website Request');
 
         // Email Content
         $mail->isHTML(true);
