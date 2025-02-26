@@ -32,10 +32,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom('notifications@dwellitsystems.com');
         $mail->addAddress('emmanual.nebu@dwellitsystems.com', 'Website Request');
 
+        // Attach Resume File
+        if (!empty($_FILES['resume']['name'])) {
+            $resumeFilePath = $_FILES['resume']['tmp_name'];
+            $resumeFileName = $_FILES['resume']['name'];
+            $mail->addAttachment($resumeFilePath, $resumeFileName);
+        }
+
         // Email Content
         $mail->isHTML(true);
-        $mail->Subject = 'New Contact Form Message';
-        $mail->Body    = "<strong>Name:</strong> $firstName <br><br><strong>Email:</strong>$email<br><br><strong>Phone:</strong><br>$phone<br><br><strong>Address:</strong><br>$address<br><br><strong>City:</strong><br>$city<br><br><strong>State:</strong><br>$state<br><br><strong>Pincode:</strong><br>$pincode";
+        $mail->Subject = 'New Carrer Form Message';
+        $mail->Body    = "<strong>Name:</strong> $firstName <br><br>
+        <strong>Email:</strong>$email<br><br>
+        <strong>Phone:</strong><br>$phone<br><br>
+        <strong>Address:</strong><br>$address<br><br>
+        <strong>City:</strong><br>$city<br><br>
+        <strong>State:</strong><br>$state<br><br>
+        <strong>Pincode:</strong><br>$pincode
+        <strong>Resume Attached:</strong> " . (!empty($_FILES['resume']['name']) ? 'Yes' : 'No')";
         
         $mail->send();
         //echo "Message sent successfully!";
