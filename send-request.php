@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         $mail->send();
         //echo "Message sent successfully!";
-        echo '<script>alert("Message sent successfully!"); location.reload();</script>';
+        echo '<script>alert("Message sent successfully!"); window.location.href="https://casterlogistics.com/home";</script>';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
